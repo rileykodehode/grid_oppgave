@@ -36,7 +36,13 @@ body {
   flex-flow: column;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 5px 5px 10px var(--Grey-500);
+  box-shadow: 5px 5px 10px var(--Grey-200);
+}
+
+.card-title {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
 }
 
 /* Daniel */
@@ -47,7 +53,7 @@ body {
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 95% 10%;
-  color: var(--Purple-300);
+  color: var(--Grey-100);
 }
 
 .box1 .card-subheader {

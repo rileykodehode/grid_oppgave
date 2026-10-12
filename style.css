@@ -1,0 +1,155 @@
+:root {
+  --Purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --Purple-500: hsl(263, 55%, 52%);
+
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Barlow SemiCondensed";
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 20px;
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px var(--Grey-500);
+}
+
+/* Daniel */
+.box1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  background-color: var(--Purple-500);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 10%;
+  color: var(--Purple-300);
+}
+
+.box1 .card-subheader {
+  color: var(--White);
+}
+
+/* Jonathan */
+.box2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 1;
+  background-color: var(--Grey-500);
+  color: var(--Grey-200);
+}
+
+.box2 .card-subheader {
+  color: var(--White);
+}
+
+/* Jeanette */
+.box3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--White);
+  color: var(--Grey-400);
+}
+
+.box3 .card-subheader {
+  color: var(--Grey-500);
+}
+
+/* Patrick */
+.box4 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  background-color: var(--Dark-blue);
+  color: var(--Grey-200);
+}
+
+/* Kira */
+.box5 {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  background-color: var(--White);
+  color: var(--Grey-400);
+}
+
+.box5 .card-subheader {
+  color: var(--Grey-500);
+}
+
+/* Profile Pictures*/
+.box1 .pfp {
+  border-radius: 200px;
+  width: 56px;
+  border: solid 2px var(--Purple-300);
+}
+
+.box2 .pfp {
+  border-radius: 200px;
+  width: 56px;
+  border: solid 2px var(--Grey-400);
+}
+
+.box3 .pfp {
+  border-radius: 200px;
+  width: 56px;
+}
+
+.box4 .pfp {
+  border-radius: 200px;
+  width: 56px;
+  border: solid 2px var(--Purple-500);
+}
+
+.box5 .pfp {
+  border-radius: 200px;
+  width: 56px;
+}
+
+.card-title {
+  display: flex;
+  flex-flow: row;
+  margin-right: 70%;
+  margin-bottom: 20px;
+  padding: 20px;
+  gap: 20px;
+  width: 90%;
+}
+
+.card-subheader {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
